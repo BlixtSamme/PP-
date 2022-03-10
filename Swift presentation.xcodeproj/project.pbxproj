@@ -13,6 +13,8 @@
 		EABB4F6427D0CFD0003EADE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABB4F6327D0CFD0003EADE4 /* Preview Assets.xcassets */; };
 		EABB4F6F27D0CFD0003EADE4 /* Swift_presentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB4F6E27D0CFD0003EADE4 /* Swift_presentationTests.swift */; };
 		EABB4F7A27D0CFD0003EADE4 /* Swift_presentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB4F7927D0CFD0003EADE4 /* Swift_presentationUITests.swift */; };
+		EAC2632527DA82FF00C21C96 /* slideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2632427DA82FF00C21C96 /* slideView.swift */; };
+		EAC2632727DA830A00C21C96 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2632627DA830A00C21C96 /* mainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EABB4F7527D0CFD0003EADE4 /* Swift presentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift presentationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABB4F7927D0CFD0003EADE4 /* Swift_presentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_presentationUITests.swift; sourceTree = "<group>"; };
 		EABB4F7B27D0CFD0003EADE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC2632427DA82FF00C21C96 /* slideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slideView.swift; sourceTree = "<group>"; };
+		EAC2632627DA830A00C21C96 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		EABB4F5B27D0CFCE003EADE4 /* Swift presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2632327DA82F200C21C96 /* Views */,
 				EABB4F5C27D0CFCE003EADE4 /* Swift_presentationApp.swift */,
 				EABB4F5E27D0CFCE003EADE4 /* ContentView.swift */,
 				EABB4F6027D0CFD0003EADE4 /* Assets.xcassets */,
@@ -128,6 +133,15 @@
 				EABB4F7B27D0CFD0003EADE4 /* Info.plist */,
 			);
 			path = "Swift presentationUITests";
+			sourceTree = "<group>";
+		};
+		EAC2632327DA82F200C21C96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2632427DA82FF00C21C96 /* slideView.swift */,
+				EAC2632627DA830A00C21C96 /* mainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EABB4F5F27D0CFCE003EADE4 /* ContentView.swift in Sources */,
+				EAC2632727DA830A00C21C96 /* mainView.swift in Sources */,
+				EAC2632527DA82FF00C21C96 /* slideView.swift in Sources */,
 				EABB4F5D27D0CFCE003EADE4 /* Swift_presentationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
