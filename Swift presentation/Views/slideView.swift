@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct slideView: View {
-    @StateObject var e = elements()
+    @ObservedObject var e: elements
     @State var text = "hej"
     var body: some View {
         VStack{
@@ -32,8 +32,8 @@ struct slideView: View {
     }
 }
 
-struct slideView_Previews: PreviewProvider {
-    static var previews: some View {
-        slideView()
-    }
-}
+//struct slideView_Previews: PreviewProvider {
+//    static var previews: some View {
+//
+//    }
+//}

@@ -12,7 +12,7 @@ class elements: ObservableObject{
 }
 
 struct mainView: View {
-    var slide = slideView()
+    @StateObject var el = elements()
     @State var texts: [String]  = ["hej"]
     var body: some View {
         VStack{
@@ -20,7 +20,7 @@ struct mainView: View {
                 .frame(maxHeight: 50)
             HStack{
                 Button("text"){
-                    slide.e.texts.append("nytt")
+                    el.texts.append("Hej")
                 }.clipShape(Rectangle())
                 Button("shapes"){
                 }
@@ -28,7 +28,7 @@ struct mainView: View {
             Spacer()
                 .frame(maxHeight: 100)
          
-            slide
+            slideView(e: el)
             Spacer()
         }
     }
